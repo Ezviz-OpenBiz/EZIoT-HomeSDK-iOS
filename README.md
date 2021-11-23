@@ -1,5 +1,4 @@
 # 快速集成
-
 本文主要介绍如何快速将 App SDK 接入到当前工程中去。介绍如何初始化，以及如何在demo中快速运行，快速上手萤石智能的移动应用开发。
 
 ## 准备工作
@@ -45,14 +44,6 @@ configParam.appId = @"Your App ID";
 
 //初始化 EZIoTUserSDK
 [EZIoTUserGlobalSetting initSDK];
-
-//初始化 EZIoTNetConfigSDK
-EZIoTNetConfigParam *params = [EZIoTNetConfigParam new];
-params.appId = @"Your App ID";
-params.sessionId = [EZIoTUserInfo getInstance].sessionId;
-params.httpApiDomain = @"Your domain"; //可选，为空将使用默认地址，用于设置HTTP请求域名（格式：https://xxx.com）
-params.devRouteDomain = @"Your Device domain"; // 可选，为空将使用默认地址，用于设置设备网关域名（格式：http://xxx.com）
-[EZIoTNetGlobalSetting initSDKWithConfigParam:params];
 ```
 
 * 如需要推送功能，请在 APPDelegate 中注册推送代理方法
@@ -76,6 +67,7 @@ SDK Demo 演示了萤石 App SDK 的接入流程以及 SDK 开放的功能，因
 ### 运行 Demo
 * 通过 Xcode 打开 EZIoTSmartSDKDemo.xcworkspace 文件，进入工程；
 * 在工程 Targets -> Signing & Capabilities -> Signing 中配置您的 Bundle Identifier 和 Provisioning Profile；
+* 在工程 AppDelegate 的 setupAppSDK 方法中设置您的 AppId;
   
 **Demo示例：**  
 
