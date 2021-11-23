@@ -1,0 +1,6 @@
+framework module EZIoTMessageSDK {
+  umbrella header "EZIoTMessageSDK.h"
+
+  export *
+  module * { export * }
+}

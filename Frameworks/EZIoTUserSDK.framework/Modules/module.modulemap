@@ -1,0 +1,6 @@
+framework module EZIoTUserSDK {
+  umbrella header "EZIoTUserSDK.h"
+
+  export *
+  module * { export * }
+}

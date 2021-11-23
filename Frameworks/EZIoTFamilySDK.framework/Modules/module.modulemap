@@ -1,0 +1,6 @@
+framework module EZIoTFamilySDK {
+  umbrella header "EZIoTFamilySDK.h"
+
+  export *
+  module * { export * }
+}

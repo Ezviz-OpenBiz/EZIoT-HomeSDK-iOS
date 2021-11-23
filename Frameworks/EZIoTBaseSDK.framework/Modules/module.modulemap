@@ -1,0 +1,6 @@
+framework module EZIoTBaseSDK {
+  umbrella header "EZIoTBaseSDK.h"
+
+  export *
+  module * { export * }
+}
