@@ -61,9 +61,11 @@ SDK Demo 演示了萤石 App SDK 的接入流程以及 SDK 开放的功能，因
 * 配网模块：包含接触式配网  
 
 ### 运行 Demo
-* 通过 Xcode 打开 EZIoTSmartSDKDemo.xcworkspace 文件，进入工程；
+* 打开 Demo 工程进入 EZIoTHomeSDKDemo.xcodeproj 所在目录，通过终端执行 pod install 命令安装依赖组件。执行成功后在当前目录会生成 EZIoTHomeSDKDemo.xcworkspace 文件。
+* 通过 Xcode 打开 EZIoTHomeSDKDemo.xcworkspace 文件，进入工程；
 * 在工程 Targets -> Signing & Capabilities -> Signing 中配置您的 Bundle Identifier 和 Provisioning Profile；
 * 在项目文件 AppDelegate.m 的 setupAppSDK 方法中设置您的 AppId;
+
   
 **Demo示例：**  
 
