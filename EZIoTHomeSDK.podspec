@@ -14,6 +14,7 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = "Frameworks/**.framework"
   spec.library   = "resolv.9"
   spec.requires_arc = true
+  spec.pod_target_xcconfig = {'VALID_ARCHS[sdk=iphonesimulator*]' => ''}
 
   spec.dependency "AFNetworking", "~> 4.0.1"
   spec.dependency "GTMBase64", "~> 1.0.1"
