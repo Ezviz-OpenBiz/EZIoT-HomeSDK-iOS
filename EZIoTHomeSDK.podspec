@@ -9,6 +9,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/Ezviz-OpenBiz/EZIoT-HomeSDK-iOS"
   spec.author             = "yuqian"
   spec.platform     = :ios, "9.0"
+  spec.ios.deployment_target = "9.0"
   spec.source       = { :git => "https://github.com/Ezviz-OpenBiz/EZIoT-HomeSDK-iOS.git", :tag => "#{spec.version}" }
   spec.vendored_frameworks = "Frameworks/**.framework"
   spec.library   = "resolv.9"
