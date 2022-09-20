@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)startRequestSystemConfiguration:(void (^)(void))success
                                 failure:(void(^)(NSError *error))failure;
 
++ (void)parseCacheSystemConfigurations;
 
 #pragma mark -获取灰度配置
 + (void)startRequestGrayConfiguration:(void (^)(void))success

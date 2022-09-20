@@ -1,0 +1,6 @@
+framework module EZIoTIPCSDK {
+  umbrella header "EZIoTIPCSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

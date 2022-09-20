@@ -1,5 +1,5 @@
 framework module EZIoTNetConfigSDK {
-  umbrella header "EZIoTNetConfigSDK.h"
+  umbrella header "EZIoTNetConfigSDK-umbrella.h"
 
   export *
   module * { export * }

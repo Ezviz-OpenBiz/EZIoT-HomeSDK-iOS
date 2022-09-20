@@ -96,11 +96,13 @@ RLM_ARRAY_TYPE(EZIoTDeviceP2PInfo)
 
 @interface EZIoTDeviceInfo : RLMObject
 
+@property(nonatomic,copy)   NSString    *mac;                  //蓝牙地址
 @property(nonatomic,copy)   NSString    *name;                  //名称
 @property(nonatomic,copy)   NSString    *userId;                //用户id
 @property(nonatomic,copy)   NSString    *catId;                 //添加设备时候需要，确定设备类别
 @property(nonatomic,copy)   NSString    *deviceSerial;          //设备序列号
 @property(nonatomic,copy)   NSString    *deviceShortSerial;      //设备短序列号
+@property(nonatomic,copy)   NSString    *deviceCategory;         //设备品类
 @property(nonatomic,copy)   NSString    *deviceType;            //设备类型 如CS-C1s-54WPMFBRT
 @property(nonatomic,copy)   NSString    *version;               //版本
 @property(nonatomic,copy)   NSString    *supportExtShort;       //设备短能力级，如0|1|-1|
@@ -115,6 +117,7 @@ RLM_ARRAY_TYPE(EZIoTDeviceP2PInfo)
 @property(nonatomic,assign) BOOL        forceUpgrade;           //设备是否需要强制升级,默认false 目前接口没返回该字段，但以后可能有用
 @property(nonatomic,assign) BOOL        isRelated;              //是否与当前用户有关联，默认True,如果N1和Ipc都属于当前用户则isRelated=1  反之isRelated=0
 @property(nonatomic,copy)   NSString    *ezDeviceCapability;    //ezDevice能力级,{"sc":"1","v3":"1"},说明,sc(Single connection) : 是否支持以设备为单位建立连接，1：支持，0：不支持；v3: 是否支持p2p的v3版本，1：支持，0：不支持.
+@property(nonatomic,assign) NSInteger   qosTalkVesion;          //获取支持qos对讲设备版本
 
 @property(nonatomic,copy)   NSString *feature;  //IOT特有的能力项列表
 @property(nonatomic,copy)   NSArray<NSDictionary *> *featureArray; //feature字段解析出的字典信息
@@ -122,10 +125,11 @@ RLM_ARRAY_TYPE(EZIoTDeviceP2PInfo)
 @property (nonatomic,copy)  NSString *featureValues; //自描述信息的值
 @property(nonatomic,copy)   NSString *rnPackage;  //RN配置信息
 
-@property(nonatomic,strong) EZIoTProductInfo *productInfo;
 @property(nonatomic,strong) NSMutableArray<EZIoTPropertyFeatureItem *>       *propFeatureItems;
 @property(nonatomic,strong) NSMutableArray<EZIoTActionFeatureItem *>         *actionFeatureItems;
-@property(nonatomic,strong) RLMArray<EZIoTResourceInfo *><EZIoTResourceInfo>     *resourceInfos;
+
+@property (nonatomic, assign) BOOL isMP; //是小程序设备
+@property (nonatomic, assign) BOOL isV3; //使用自描述3.0
 
 @property(nonatomic,strong) EZIoTDeviceWifiInfo                    *wifiInfo;              //设备wifi信息
 @property(nonatomic,strong) EZIoTDeviceConnectionInfo              *connectionInfo;        //设备连接信息

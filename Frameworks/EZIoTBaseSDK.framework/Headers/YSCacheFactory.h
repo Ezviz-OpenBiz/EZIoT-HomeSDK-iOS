@@ -8,7 +8,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YYCache.h"
+#import <YYCache/YYCache.h>
 
 @interface YSCacheFactory : NSObject
 /**

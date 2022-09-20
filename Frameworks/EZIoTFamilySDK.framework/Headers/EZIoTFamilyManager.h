@@ -72,6 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param success 成功回调
 /// @param failure 失败回调
 + (void) inviteFamilyMemberWithFamilyId:(NSString *)familyId
+                              phoneCode:(NSString *)phoneCode
                          invitedAccount:(NSString *)invitedAccount
                                 success:(void(^)(void)) success
                                 failure:(void(^)(NSError *error))failure;
@@ -84,7 +85,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param failure 失败回调
 + (void) memberInviteOperationWithFamilyId:(NSString *)familyId
                                   memberId:(NSString *)memberId
-                                    status:(BOOL)status
+                                    status:(int)status
                                    success:(void(^)(void)) success
                                    failure:(void(^)(NSError *error))failure;
 

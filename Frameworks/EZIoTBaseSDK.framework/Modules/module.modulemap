@@ -1,5 +1,5 @@
 framework module EZIoTBaseSDK {
-  umbrella header "EZIoTBaseSDK.h"
+  umbrella header "EZIoTBaseSDK-umbrella.h"
 
   export *
   module * { export * }

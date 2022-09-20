@@ -17,6 +17,7 @@
 #import "EZIoTActionFeatureItem.h"
 #import "EZIoTCommonMacro.h"
 
+#import "EZIoTResourceInfo+AccessDB.h"
 #import "EZIoTDeviceManager+Feature.h"
 
  

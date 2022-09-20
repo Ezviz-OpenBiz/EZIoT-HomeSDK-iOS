@@ -1,0 +1,6 @@
+framework module EZIoTDeviceControlSDK {
+  umbrella header "EZIoTDeviceControlSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

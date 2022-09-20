@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class EZIoTDeviceInfoResp,EZIoTDeviceInfo;
+@class EZIoTDeviceInfoResp,EZIoTDeviceInfo,YSDTOMeta;
 
 /// 设备管理操作类
 @interface EZIoTDeviceManager : NSObject
@@ -30,6 +30,11 @@ NS_ASSUME_NONNULL_BEGIN
                          success:(void(^)(EZIoTDeviceInfoResp *deviceInfoResp)) success
                          failure:(void(^)(NSError *error))failure;
 
++(void)searchDeviceInfo:(NSString *)deviceSerials
+                 roomId:(NSString *)roomId
+             retryCount:(NSUInteger)retryCount
+                success:(void(^)(YSDTOMeta *meta, NSMutableArray<EZIoTDeviceInfo *> * _Nullable devices, NSArray<NSString *> *failFilters)) success
+                failure:(void(^)(NSError *error))failure;
 
 /// 获取本地DB默认家庭的设备，默认升序排列
 + (NSMutableArray<EZIoTDeviceInfo *> *)getLocalDevices;

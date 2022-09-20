@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EZIoTUserAreaInfo.h"
 
-@class EZIoTUserAreaInfo,EZIoTUserTerminalInfo,EZIoTSystemConfigInfo,EZIoTGrayConfigInfo;
+@class EZIoTUserTerminalInfo,EZIoTSystemConfigInfo,EZIoTGrayConfigInfo;
 
 @interface EZIoTUserInfo : NSObject
 
@@ -61,6 +62,7 @@
 - (void)clearForDelAccount;
 
 @end
+
 
 
 @interface EZIoTSystemConfigInfo : NSObject
@@ -129,6 +131,7 @@
 
 @interface EZIoTGrayConfigInfo : NSObject
 
+@property (nonatomic, strong) NSDictionary         *autoUploadParams; //排障自动上传
 @property (nonatomic, assign) NSInteger            yiBingAgencyEnable;      //蚁兵开关8
 @property (nonatomic, assign) NSInteger            yiBingAgencyDeviceEnable;//"未开启视频加密”设备是否支持走蚁兵代理 19
 @property (nonatomic, assign) NSInteger            yiBingEncryptEnable;     //蚁兵代理加密码流开关 1001
@@ -162,6 +165,8 @@
 @property (nonatomic, assign) BOOL                 weatherAreaEnable; // 77 首页天气，是否显示 0：不展示， 1：展示，默认展示
 @property (nonatomic, assign) NSInteger           cameraCardCloudServiceType; // 首页视频卡片云存储套餐方案 0：A方案， 1：B方案
 
+@property (nonatomic, assign) BOOL                 grayXLogUploadType; //是否开启灰度日志模式
+@property (nonatomic, assign) BOOL                 enableDebugTool;
 
 //IOT
 @property (nonatomic, assign) BOOL mineMessageShow;//我的模块 消息中心和更多服务是否展示

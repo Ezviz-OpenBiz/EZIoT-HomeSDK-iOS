@@ -1,0 +1,6 @@
+framework module EZIoTBluetoothSDK {
+  umbrella header "EZIoTBluetoothSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

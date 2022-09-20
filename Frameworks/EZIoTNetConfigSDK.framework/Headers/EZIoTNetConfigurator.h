@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, EZIoTFastAPConfigStatus)
     EZIoTFastAPConfigStatusUnknow,            // 未知错误
     EZIoTFastAPConfigStatusPasswordError,     // 密码错误
     EZIoTFastAPConfigStatusNoAPFound,         // 未找到wifi热点
+    EZIoTFastAPConfigStatusConnectFailed,     // 连接失败
 };
 
 typedef NS_ENUM(NSInteger, EZIoTAddDeviceType)
@@ -31,14 +32,16 @@ typedef NS_ENUM(NSInteger, EZIoTAddDeviceType)
 
 @property(nonatomic, assign) EZIoTAddDeviceType addDevType;
 
+//common required
+@property(nonatomic, copy) NSString *groupId;
+
 // Normal device （required）
 @property(nonatomic, copy) NSString *deviceSerial;
 @property(nonatomic, copy) NSString *validateCode;
 @property(nonatomic, copy) NSString *familyId;
-@property(nonatomic, copy) NSString *groupId;
+
 
 //NB device （required）
-@property(nonatomic, copy) NSString *productId;
 @property(nonatomic, copy) NSString *imei;
 
 @end
@@ -128,7 +131,7 @@ typedef NS_ENUM(NSInteger, EZIoTAddDeviceType)
 /// @param success 成功回调
 /// @param failure 失败回调
 - (void) addDeviceWithParam:(EZIoTAddDeviceConigParam *)param
-                    success:(void(^)(void))success
+                    success:(void(^)(NSString *_Nullable deviceSerial))success
                     failure:(void(^)(NSError *error))failure;
 
 /// 用于手机连接指定WiFi

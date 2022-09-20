@@ -21,4 +21,6 @@
 + (NSInteger)hourFromTime:(NSString *)time;
 + (NSInteger)minuteFromTime:(NSString *)time;
 
+- (BOOL)matchRegex:(NSString *)pattern;
+
 @end

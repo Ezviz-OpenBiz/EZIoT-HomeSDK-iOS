@@ -19,6 +19,5 @@ FOUNDATION_EXPORT const unsigned char EZIoTMessageSDKVersionString[];
 #import <EZIoTMessageSDK/EZIoTMessageManager.h>
 #import <EZIoTMessageSDK/EZIoTMsgListResp.h>
 #import <EZIoTMessageSDK/EZIoTMsgInfo.h>
-#import <EZIoTMessageSDK/EZIoTMsgDetailInfo.h>
 #import <EZIoTMessageSDK/EZIoTMsgAbstractInfo.h>
 #import <EZIoTMessageSDK/EZIoTMsgCategoryInfo.h>

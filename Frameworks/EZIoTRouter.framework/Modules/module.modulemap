@@ -1,0 +1,6 @@
+framework module EZIoTRouter {
+  umbrella header "EZIoTRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}

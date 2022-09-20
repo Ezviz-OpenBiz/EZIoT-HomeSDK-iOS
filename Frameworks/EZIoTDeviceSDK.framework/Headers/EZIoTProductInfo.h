@@ -40,6 +40,7 @@ RLM_ARRAY_TYPE(EZIoTConfigVersionItem)
 
 - (NSDictionary *)getCapacities;
 - (NSDictionary *)getProfileInfo;
+- (NSDictionary *)getLiteProfileInfo;
 
 - (void)generatePrimaryKey;
 

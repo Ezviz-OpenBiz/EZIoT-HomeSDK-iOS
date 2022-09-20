@@ -53,9 +53,12 @@ typedef void(^YSOneArgBlock)(NSString *arg);
                userIdBlock:(NSString *(^)(void))userIdBlock
             logServerBlock:(NSString *(^)(void))logServerBlock
      systemNamePrefixBlock:(NSString *(^)(void))systemNamePrefixBlock
-                appIdBlock:(NSString *(^)(void))appIdBlock;
+                appIdBlock:(NSString *(^)(void))appIdBlock
+              appPublicVer:(NSString *)appPublicVer;
 
 + (void)observeAppLife;
+
++ (NSString *)lifeId;
 
 @end
 

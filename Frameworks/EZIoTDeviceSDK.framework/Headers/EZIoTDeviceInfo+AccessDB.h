@@ -14,17 +14,21 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - query
 
 + (NSMutableArray<EZIoTDeviceInfo *> *)allDevices;
++ (NSMutableArray<EZIoTDeviceInfo *> *)allDevicesWithGroupId:(NSString *)groupId;
 + (NSMutableArray<EZIoTDeviceInfo *> *)allDevicesWithFamilyId:(NSString *)familyId;
 + (NSMutableArray<EZIoTDeviceInfo *> *)allDevicesWithFamilyId:(NSString *)familyId groupId:(NSString *)groupId;
 + (NSMutableArray<EZIoTDeviceInfo *> *)allDevicesWithFamilyId:(NSString *)familyId groupId:(NSString *)groupId ascending:(BOOL)ascending;
 
 + (EZIoTDeviceInfo *)getDeviceBySerial:(NSString *)deviceSerial;
++ (EZIoTDeviceInfo *)getDeviceBySerial:(NSString *)deviceSerial needUnmanaged:(BOOL)needUnmanaged;
 + (EZIoTDeviceInfo *)getDeviceBySerial:(NSString *)deviceSerial familyId:(NSString *)familyId;
++ (EZIoTDeviceInfo *)getDeviceBySerial:(NSString *)deviceSerial familyId:(NSString *)familyId needUnmanaged:(BOOL)needUnmanaged;
++ (NSMutableArray<EZIoTDeviceInfo *> *)getDeviceByFuzzySerial:(NSString *)fuzzyStr;
 
 #pragma mark - update && add
 
 + (void)addOrUpdateDevice:(EZIoTDeviceInfo *)device;
-+ (void)addOrUpdateDevices:(NSArray<EZIoTDeviceInfo *> *) deviceInfos familyId:(NSString * _Nullable)familyId;
++ (void)addOrUpdateDevices:(NSArray<EZIoTDeviceInfo *> *)deviceInfos familyId:(NSString * _Nullable)familyId;
 
 #pragma mark - delete
 

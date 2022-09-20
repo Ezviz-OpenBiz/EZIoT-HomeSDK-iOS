@@ -23,7 +23,6 @@ Pod::Spec.new do |spec|
   spec.dependency "ReactiveObjC", "~> 3.1.1"
   spec.dependency "SSKeychain", "~> 1.4.1"
   spec.dependency "KVOController", "~> 1.2.0"
-  spec.dependency "RegexKitLite", "~> 4.0.0"
   spec.dependency "YYCache", "~> 1.0.4"
   spec.dependency "FMDB", "~> 2.7.5"
   spec.dependency "Realm", "~> 10.19.0"

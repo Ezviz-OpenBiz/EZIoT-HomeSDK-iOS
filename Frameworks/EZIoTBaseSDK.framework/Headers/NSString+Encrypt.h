@@ -18,4 +18,8 @@
 //账号脱敏处理（手机/邮箱）
 - (NSString *)accountDesensitize;
 
+/// url 解码
+- (NSString *)decodeFromPercentEscapeString;
+
+
 @end

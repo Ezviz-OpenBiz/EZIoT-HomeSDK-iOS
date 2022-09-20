@@ -7,7 +7,7 @@
 //
 
 #import "YSRequest.h"
-#import "MJExtension.h"
+#import <MJExtension/MJExtension.h>
 
 @interface V2CommonRequest : YSRequest
 

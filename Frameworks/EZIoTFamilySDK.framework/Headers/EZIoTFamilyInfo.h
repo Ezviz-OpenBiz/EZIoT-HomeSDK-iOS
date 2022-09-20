@@ -6,16 +6,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Realm/Realm.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// 家庭基础信息描述类
-@interface EZIoTFamilyInfo : NSObject
+@interface EZIoTFamilyInfo : RLMObject
 
 /// 家庭Id
 @property(nonatomic,copy) NSString *familyId;
-/// 创建者
-@property(nonatomic,copy) NSString *creator;
+/// 创建者id
+@property(nonatomic,copy) NSString *creatorId;
 /// 家庭名称
 @property(nonatomic,copy) NSString *familyName;
 /// 家庭中所包含的设备数量

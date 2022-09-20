@@ -15,6 +15,9 @@
 @property (nonatomic, copy) NSString *packageId;
 
 @property (nonatomic, copy) NSString *sessionId;
+@property (nonatomic, copy) NSString *userId;
+
+@property (nonatomic, assign) BOOL notMonitoredApisLogEnable;
 
 + (instancetype)sharedInstance;
 + (NSString *) getVersion;

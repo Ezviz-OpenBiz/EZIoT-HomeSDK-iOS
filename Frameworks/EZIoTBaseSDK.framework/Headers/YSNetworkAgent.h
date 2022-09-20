@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "YSBaseRequest.h"
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface YSNetworkAgent : NSObject
 

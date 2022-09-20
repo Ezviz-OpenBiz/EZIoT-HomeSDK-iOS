@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 
 
 #define YS_NET_ERROR_MESSAGE @"YS_NET_ERROR_MESSAGE"
