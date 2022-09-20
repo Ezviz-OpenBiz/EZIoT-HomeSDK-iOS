@@ -19,7 +19,7 @@
 platform :ios, '9.0'
 
 target 'Your_Project_Name' do
-	pod 'EZIoTHomeSDK', '~> 1.0.0'
+	pod 'EZIoTHomeSDK', '~> 1.1.0'
 end
 ``` 
 在 PodFile 目录下，通过终端软件执行 Pod install 命令。然后打开 .xcworkspace 文件，在 Xcode 中查看项目。
