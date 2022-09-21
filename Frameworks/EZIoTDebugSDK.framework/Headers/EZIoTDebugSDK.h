@@ -9,6 +9,8 @@
 #import <EZIoTDebugSDK/YSWoodpecker.h>
 #import <EZIoTDebugSDK/YSLogDefine.h>
 
+// build 2022.8.29
+
 //! Project version number for EZIoTDebugSDK.
 FOUNDATION_EXPORT double EZIoTDebugSDKVersionNumber;
 

@@ -13,4 +13,6 @@
 
 -(NSString *)otherInfo;
 
+-(NSString *)getAPPInfo:(NSDictionary *)paraDic;
+
 @end

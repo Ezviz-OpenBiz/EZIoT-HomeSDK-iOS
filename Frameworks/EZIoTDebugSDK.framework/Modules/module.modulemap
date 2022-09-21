@@ -1,5 +1,5 @@
 framework module EZIoTDebugSDK {
-  umbrella header "EZIoTDebugSDK-umbrella.h"
+  umbrella header "EZIoTDebugSDK.h"
 
   export *
   module * { export * }
