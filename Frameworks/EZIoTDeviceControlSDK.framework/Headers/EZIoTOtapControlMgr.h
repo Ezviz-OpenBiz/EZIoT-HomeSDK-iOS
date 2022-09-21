@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EZIoTFeatureConfigParam.h"
+#import <EZIoTRouter/EZIoTFeatureConfigParam.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

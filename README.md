@@ -19,6 +19,7 @@
 platform :ios, '9.0'
 
 target 'Your_Project_Name' do
+	use_frameworks!
 	pod 'EZIoTHomeSDK', '~> 1.1.0'
 end
 ``` 
@@ -26,8 +27,10 @@ end
 ```
 pod install
 ``` 
-### 第三步：关闭工程 Enable Bitcode
-在工程 Targets -> Build Setting -> Enable Bitcode 设置为 NO。
+### 第三步：工程配置
+1. 关闭工程 Enable Bitcode ：在工程 Targets -> Build Setting -> Enable Bitcode 设置为 NO；
+2. 加入-ObjC ：在工程 Targets -> Build Setting -> Other Linker Flags 中，加入 -ObjC 选项；
+
 
 ### 第四步：SDK初始化
 * 请确保在SDK使用前，进行初始化操作    

@@ -152,6 +152,4 @@ Automatically open 'UI Check' tool on show.
 
 +(void)logUpload:(NSDictionary *)dic;
 
-+(NSArray *)shareItems;
-
 @end

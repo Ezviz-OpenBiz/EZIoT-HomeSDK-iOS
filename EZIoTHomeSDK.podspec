@@ -12,10 +12,12 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "9.0"
   spec.source       = { :git => "https://github.com/Ezviz-OpenBiz/EZIoT-HomeSDK-iOS.git", :tag => "#{spec.version}" }
   spec.vendored_frameworks = "Frameworks/**.framework"
-  spec.library   = "resolv.9"
+  spec.frameworks = "OpenAL", "VideoToolbox"
+  spec.libraries = "iconv.2.4.0", "c++", "resolv.9"
   spec.requires_arc = true
-  spec.pod_target_xcconfig = {'VALID_ARCHS[sdk=iphonesimulator*]' => ''}
-
+  spec.resources = 'Frameworks/Res/*.{metallib}'
+  spec.pod_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES', 'ENABLE_BITCODE' => 'NO', 'OTHER_LDFLAGS' => ['-lObjC'], 'VALID_ARCHS[sdk=iphonesimulator*]' => ''}
+  
   spec.dependency "AFNetworking", "~> 4.0.1"
   spec.dependency "GTMBase64", "~> 1.0.1"
   spec.dependency "MJExtension", "~> 3.3.0"

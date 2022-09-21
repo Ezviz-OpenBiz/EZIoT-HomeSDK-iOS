@@ -12,5 +12,12 @@
 #import "YSWPluginProtocol.h"
 #import "YSSysInfoPlugin.h"
 
+//! Project version number for YKWoodpecker.
+FOUNDATION_EXPORT double YKWoodpeckerVersionNumber;
+
+//! Project version string for YKWoodpecker.
+FOUNDATION_EXPORT const unsigned char YKWoodpeckerVersionString[];
+
+
 
 
