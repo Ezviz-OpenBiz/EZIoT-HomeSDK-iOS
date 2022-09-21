@@ -19,6 +19,7 @@
 platform :ios, '9.0'
 
 target 'Your_Project_Name' do
+	use_frameworks!
 	pod 'EZIoTHomeSDK', '~> 1.1.0'
 end
 ``` 
