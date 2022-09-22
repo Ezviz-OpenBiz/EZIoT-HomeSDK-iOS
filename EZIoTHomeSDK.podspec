@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "EZIoTHomeSDK"
-  spec.version      = "1.1.0"
+  spec.version      = "1.1.1"
   spec.summary      = "Ezviz IoT Home SDK for iOS."
   spec.description  = <<-DESC
                         The HOME SDK is used to quickly integrate the open capabilities of the Ezviz IoT platform for developers.
