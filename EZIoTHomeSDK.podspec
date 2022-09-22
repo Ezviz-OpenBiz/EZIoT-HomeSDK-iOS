@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.libraries = "iconv.2.4.0", "c++", "resolv.9"
   spec.requires_arc = true
   spec.resources = 'Frameworks/Resources/com.hri.hpc.mobile.ios.player.metallib'
-  spec.pod_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES', 'ENABLE_BITCODE' => 'NO', 'OTHER_LDFLAGS' => ['-ObjC'], 'VALID_ARCHS' => 'arm64'}
+  spec.pod_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES', 'ENABLE_BITCODE' => 'NO', 'OTHER_LDFLAGS' => ['-ObjC'], 'VALID_ARCHS[sdk=iphonesimulator*]' => ''}
   spec.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   
   spec.dependency "AFNetworking", "~> 4.0.1"
