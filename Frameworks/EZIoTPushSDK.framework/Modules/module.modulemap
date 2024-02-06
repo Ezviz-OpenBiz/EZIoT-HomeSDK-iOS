@@ -1,0 +1,6 @@
+framework module EZIoTPushSDK {
+  umbrella header "EZIoTPushSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
